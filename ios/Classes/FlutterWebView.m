@@ -362,9 +362,9 @@
   switch ([policy integerValue]) {
     case 0:  // require_user_action_for_all_media_types
       if (@available(iOS 10.0, *)) {
-        configuration.mediaTypesRequiringUserActionForPlayback = WKAudiovisualMediaTypeAll;
+        configuration.mediaTypesRequiringUserActionForPlayback = WKAudiovisualMediaTypeNone;
       } else {
-        configuration.mediaPlaybackRequiresUserAction = true;
+        configuration.mediaPlaybackRequiresUserAction = false;
       }
       break;
     case 1:  // always_allow

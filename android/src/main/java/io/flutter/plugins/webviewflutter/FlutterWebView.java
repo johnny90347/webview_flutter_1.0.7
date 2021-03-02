@@ -396,7 +396,7 @@ public class FlutterWebView implements PlatformView, MethodCallHandler {
     // other values we require a user gesture.
     boolean requireUserGesture = mode != 1;
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
-      webView.getSettings().setMediaPlaybackRequiresUserGesture(requireUserGesture);
+      webView.getSettings().setMediaPlaybackRequiresUserGesture(false);
     }
   }
 
