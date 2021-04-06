@@ -365,6 +365,7 @@
         configuration.mediaTypesRequiringUserActionForPlayback = WKAudiovisualMediaTypeNone;
       } else {
         configuration.mediaPlaybackRequiresUserAction = false;
+        configuration.allowsInlineMediaPlayback = true;
       }
       break;
     case 1:  // always_allow
@@ -372,6 +373,7 @@
         configuration.mediaTypesRequiringUserActionForPlayback = WKAudiovisualMediaTypeNone;
       } else {
         configuration.mediaPlaybackRequiresUserAction = false;
+        configuration.allowsInlineMediaPlayback = true;
       }
       break;
     default:
