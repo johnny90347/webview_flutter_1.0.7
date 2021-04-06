@@ -363,17 +363,17 @@
     case 0:  // require_user_action_for_all_media_types
       if (@available(iOS 10.0, *)) {
         configuration.mediaTypesRequiringUserActionForPlayback = WKAudiovisualMediaTypeNone;
+         configuration.allowsInlineMediaPlayback = true;
       } else {
         configuration.mediaPlaybackRequiresUserAction = false;
-        configuration.allowsInlineMediaPlayback = true;
       }
       break;
     case 1:  // always_allow
       if (@available(iOS 10.0, *)) {
         configuration.mediaTypesRequiringUserActionForPlayback = WKAudiovisualMediaTypeNone;
+          configuration.allowsInlineMediaPlayback = true;
       } else {
         configuration.mediaPlaybackRequiresUserAction = false;
-        configuration.allowsInlineMediaPlayback = true;
       }
       break;
     default:
